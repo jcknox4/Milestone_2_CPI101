@@ -1,0 +1,96 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="game.js"></script>
+	<title>Tutor Tracker!</title>
+	<!-- Name: Joshua Knox -->
+	<!-- ID: 1217093371 -->
+	<!-- Name: Francisco Reyes -->
+	<!-- ID: 1219902502 -->
+</head>
+
+<!-- Pop up for users name -->
+<h1><center><script>
+var getUser = null;
+
+while (getUser === null || !isNaN(getUser)){
+	getUser = prompt("To get started please enter your name: ");
+
+	if (getUser === null || !isNaN(getUser)){
+		alert("Invalid name entered, you must enter a name, please try again!");
+	}else{
+		document.write("Hello ", getUser, ", welcome to Tutor Tracker!");
+
+
+	}
+	
+}
+</script></h1></center>
+
+<body><center>
+	<h2>Here are some of our best tutors: </h2>
+
+	<p id="tutor1">Tutor 1</p>
+		<a class="one" href="tutor1.html">Click here for more information about Math</a><br><br>
+
+
+	<script>
+
+
+document.getElementById("tutor1").onclick = function() {myFunction1()};
+
+function myFunction1() {
+  document.getElementById("tutor1").innerHTML = "1";
+}
+</script>
+	<img src="https://cdn.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png" alt="Tutor Picture" width="400" height="400">
+	<p id="tutor2">Tutor 2</p>
+		<a class="two" href="tutor2.html">Click here for more information about English</a><br><br>
+
+
+	<script>
+document.getElementById("tutor2").onclick = function() {myFunction2()};
+
+
+function myFunction2() {
+  document.getElementById("tutor2").innerHTML = "2";
+}
+</script>
+	<img src="https://cdn.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png" alt="Tutor Picture" width="400" height="400">
+	<p id="tutor3">Tutor 3</p>
+		<a class="three" href="tutor3.html">Click here for more information about Science</a><br><br>
+
+
+	<script>
+document.getElementById("tutor3").onclick = function() {myFunction3()};
+
+function myFunction3() {
+  document.getElementById("tutor3").innerHTML = "3";
+}
+</script>
+	<img src="https://cdn.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png" alt="Tutor Picture" width="400" height="400">
+	<p></p>
+	<a class="four" href="appointment.html"> Set Appointment </a>
+	<style>
+		img {
+			border: 2px solid #555;
+		}
+	</style>
+</center>
+<style>
+a.one:hover {color:000000;}
+a.two:hover {color:000000;}
+a.three:hover {color:000000;}
+a.four:hover {color:000000;}
+a.four:hover {font-size:150%;}
+</style>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</body>
+
+</html> 
